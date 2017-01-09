@@ -1,0 +1,104 @@
+/* shell for button view */
+.button-components {
+    .btn-add-bkgd-image {
+        max-width: 200px;
+    }
+}
+.btn{
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    >svg{
+        width: 16px;
+        height: 16px;
+    }
+    >a{
+        >svg{
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+/*rounded button*/
+.btn--rounded{
+    background: $color-gray-ee;
+    border: 0;
+    padding: 8px;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    margin-top: 8px;
+    svg{
+        color: $color-white;
+        fill: $color-white;
+    }
+}
+.btn--rounded--small{
+    @include rounded-border;
+    @include bg-green;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    position: relative;
+    svg{
+        height: 7px;
+        width: 7px;
+        fill: $color-white;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+}
+.btn--green{
+    background: $color-green;
+}
+/* button add background image */
+.btn-batch-upload {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: solid 1px #e4e4e4;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+/* button add background image : file loader */
+.btn-add-bkgd-image {
+    @include flexCenter();
+    cursor: pointer;
+    color: $color-cobalt;
+    border: dashed 1px #e0e0e0;
+
+    .bkgd-image-input {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bkgd-image-input + label {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 40px;
+    }
+}
+
+/* radio buttons */
+.radio-button-header {
+    font-weight: 600;
+    color: #424242;
+    font-size: 12px;
+}
+
+.radio-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+
+}
+

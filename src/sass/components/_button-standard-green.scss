@@ -1,0 +1,23 @@
+.button-standard-green {
+    @include text-medium;
+    height: 32px;
+    padding: 0 16px;
+    line-height: 1;
+    background-color: $color-green;
+    border: solid 1px $color-green;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        background-color: $color-green-dark;
+        border: solid 1px $color-green;
+    }
+    &:disabled{
+        background-color: $color-gray-ee;
+        border: solid 1px $color-gray-e0;
+        color: $color-gray-9e;
+    }
+}

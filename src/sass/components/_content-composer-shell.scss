@@ -1,0 +1,44 @@
+  .content-composer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .workspace {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100vw;
+
+        .canvas {
+            flex: 2;
+            overflow-y: auto;
+            min-width: 900px;
+            padding: 16px;
+            background-color: $color-gray-fa;
+        }
+
+        .artboard-container {
+            display: flex;
+            justify-content: space-around;
+            width: 970px;
+            height: calc(100% - 62px);
+            margin: 0 auto;
+            background-color: $color-gray-fa;
+            .media-tools {
+
+            }
+            .artboard {
+                width: 100%;
+                max-width: 970px;
+                height: 100%;
+                padding: 40px 0;
+                background-color: $color-white;
+                box-shadow: 0 0 6px rgba($color-gray-9e, .5);
+                position: relative;
+            }
+        }
+    }
+}

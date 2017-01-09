@@ -1,0 +1,32 @@
+.header {
+    display: block;
+    padding: 0 16px;
+    color: $color-white;
+    height: 50px; // hack to make height 48px
+    line-height: 47px;
+    background: $color-gray-f5;
+    border-bottom: $color-gray-e0 1px solid;
+
+    .header__title {
+        @include text-large-semibold;
+        float: left;
+        height: 100%;
+        display: block;
+        line-height: 50px;
+    }
+    a{
+        display: block;
+        float: right;
+        height: 100%;
+        width: 16px;
+        line-height: 53px;
+        text-align: right;
+        svg{
+            fill: $color-gray-71;
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+        }    
+    }
+    
+}

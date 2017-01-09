@@ -1,0 +1,17 @@
+$align-list: 'center','left','right','justify';
+@each $current-align in $align-list {
+  .align-#{$current-align} {
+    text-align: unquote($current-align);
+  }
+}
+
+@each $colorName, $colorValue in (
+        'white':$color-white,
+        'yellow': $color-yellow,
+        'gray-71': $color-gray-71
+  ){
+  .color--#{$colorName} {
+    color: $colorValue;
+    fill : $colorValue
+  }
+}

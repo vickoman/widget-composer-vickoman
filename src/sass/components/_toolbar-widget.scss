@@ -1,0 +1,100 @@
+// /**
+//  *   This needs re-factoring - adding for now
+//  */
+.toolbar-widget {
+    width: 845px;
+    position: relative;
+    font-size: 13px;
+    left: 50%;
+    margin-left: -443px;
+
+   .toolbar-widget__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0 16px 42px;
+        height: 45px;
+    }
+    .button-compose {
+        margin-left: 8px;
+    }
+    /* OVERRIDE */
+    .dropdown__content {
+        display: block;
+    }
+    
+    .btn-toolbar{
+        padding: 4px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        flex: 0;
+        height: 32px;
+        width: 32px;
+        border-radius: 20px;
+        background: transparent;
+        margin-left: 7px;
+        svg {
+            height: 16px;
+            width: 16px;
+            fill: $color-gray-71;
+            top: 2px;
+            position: relative;
+            &:hover {
+                fill: $color-gray-42;
+            }
+        }
+    }
+    .button-preview {
+        padding: 4px 0px 4px 4px;
+        margin-left: 25px;
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 20px;
+            margin-right: -100%;
+            border-left: 1px solid $color-gray-e0;
+            cursor: auto;
+            position: relative;
+            left: -17px;
+        }
+        svg {
+            top: -1px;
+            width: 20px;
+            height: 15px;
+        }
+    }
+    .toolbar-widget__title {
+        @include text-medium;
+        color: $color-gray-71;
+        display: flex;
+        align-items: center;
+        flex: 2;
+        padding: 0 32px 0 0;
+        position: relative;
+
+        .toolbar-widget__label {
+            @include text-small;
+            color: $color-gray-71;
+            text-transform: uppercase;
+            margin-right: 8px;
+            display: inline-table;
+        }
+    }
+   .input-text {
+        width: 100%;
+        ::-webkit-input-placeholder {
+            // @include text-placeholder;
+            padding-bottom: 1px;
+        }
+
+        // &:hover {
+        //     border-bottom: solid 1px $color-gray-71;
+        // }
+        // &:focus {
+        //     outline: none;
+        //     border-bottom: solid 1px $color-gray-71;
+        // }
+    }
+}

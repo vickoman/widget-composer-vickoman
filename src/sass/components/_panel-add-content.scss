@@ -1,0 +1,51 @@
+.panel-add-content {
+    position: relative;
+    left: -300px;
+    width: 320px;
+    height: 100%;
+    border-right: solid 1px $color-gray-e0;
+    background-color: $color-gray-fa;
+    transition: left .2s;
+
+    svg {
+        pointer-events: none;
+    }
+    .section-description {
+        margin-top: 8px;
+        @include text-medium;
+    }
+    .card-templates,
+    .elements {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 16px;
+    }
+    .card-templates li,
+    .elements li {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: $color-gray-ee;
+        cursor: pointer;
+        min-width: 70px;
+        min-height: 70px;
+        margin: 2px;
+
+        &:hover {
+            color: $color-purple;
+        }
+        &:hover svg {
+            fill: $color-purple;
+        }
+    }
+
+    .card-layout-container {
+        margin-top: 40px;
+    }
+}
+
+.u-panel-open-255-left {
+    left: 40px !important;
+    width: 255px !important;
+}

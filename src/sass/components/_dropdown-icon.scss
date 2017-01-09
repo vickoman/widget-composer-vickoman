@@ -1,0 +1,26 @@
+.dropdown-icon {
+     @include dropdown-icon;
+    .dropdown-icon__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        svg {
+            height: 16px;
+            width: 16px;
+        }
+        .dropdown-arrow {
+            height: 10px;
+            width: 7px;
+            margin-left: 4px;
+        }
+    }
+    .dropdown-icon__title {
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    ul.dropdown-icon__content {
+        @include dropdown-icon__content(24px, 100%);
+    }
+}

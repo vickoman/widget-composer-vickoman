@@ -1,0 +1,70 @@
+.accordian {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: solid 1px $color-gray-e0;
+    border-top: solid 1px $color-gray-e0;
+    padding: 0 16px;
+
+    .accordian__btn {
+        padding: 5px 10px 5px 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        svg {
+            height: 8px;
+            width: 10px;
+            transition: transform .25s;
+        }
+    }
+    .accordian__container {
+        position: relative;
+        top: 0;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        transition: height .2s;
+    }
+    .accordian__title {
+         padding: 5px 10px 5px 5px;
+        cursor: pointer;
+        @include text-medium-semibold;
+    }
+    /* override for mixin -- need to refactor this .. */
+    .dropdown-content {
+        width: 100%;
+        top: 45px;
+    }
+    .accordian__content {
+        padding: 8px 16px 32px 16px;
+        li {
+            cursor: pointer;
+            font-size: 12px;
+        }
+        input:focus + label {
+            opacity: 1!important;
+            transition: opacity .3s;
+        }
+    }
+    svg {
+        height: 8px;
+        width: 10px;
+        transition: transform .25s;
+    }
+}
+
+.border-top {
+    border-top: solid 1px $color-gray-e0;
+}
+.remove-mask {
+    overflow: visible!important;
+}
+.white-bkgd {
+    background-color: white;
+}
+.panel-closed {
+    height: 0!important;
+    display: none;
+}

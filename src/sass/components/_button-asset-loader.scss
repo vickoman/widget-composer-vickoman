@@ -1,0 +1,43 @@
+.btn-add-bkgd-image-container {
+
+    .header-title {
+        font-weight: 600;
+        color: #424242;
+        font-size: 12px;
+        padding-bottom: 16px;
+    }
+
+    .btn-add-bkgd-image {
+        cursor: pointer;
+        margin-bottom: -2px; // makes box height accurate for grid
+
+        .add-bkgd {
+            height: 104px;
+        }
+
+        label {
+            @include flexCenter;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            color: $color-cobalt;
+            > span {
+                font-size: 26px!important;
+            }
+        }
+        input {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        &:hover {
+            background-color: white;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.textarea-container {
+    @include textArea;
+    .btns-confirm {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        font-size: 10px;
+        color: $color-cobalt;
+        li {
+            cursor: pointer;
+        }
+        li:first-child {
+            padding-right: 16px;
+        }
+    }
+    .textarea {
+        width: 100%;
+    }
+    label {
+        transition: opacity .9s;
+    }
+    textarea {
+        padding-bottom: 12px!important;
+    }
+    textarea:focus {
+        padding-bottom: 25px!important;
+    }
+    textarea:focus ~ .btns-confirm {
+        display: flex!important;
+    }
+    textarea:focus ~ label {
+        transition: opacity .3s;
+        opacity: 1!important;
+    }
+    ::-webkit-input-placeholder {
+        color: #717171!important;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .btns-confirm {
+        position: relative;
+        top: -42px;
+        padding-right: 8px;
+        padding-bottom: 4px;
+        li {
+            font-size: 10px;
+        }
+    }
+}

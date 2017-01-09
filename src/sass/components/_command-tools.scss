@@ -1,0 +1,101 @@
+ .cmd-menu-container {
+     position: relative;
+     width: 31px;
+     margin: 0 auto; // hack for style guide
+
+    .cmd-menu {
+        cursor: pointer;
+        height: 31px;
+        width: 31px;
+        position: relative;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: $color-gray-ee;
+        border: solid 1px $color-gray-e0;
+        border-radius: 50%;
+        @include flexCenter;
+
+        &:hover {
+            background-color: $color-gray-ee;
+        }
+        &:hover svg {
+            fill: $color-purple;
+        }
+        svg {
+            width: auto;
+            height: 14px;
+            fill: $color-gray-42;
+            top: -1px;
+            position: relative;
+        }
+    }
+    .cmd-menu--active {
+        background-color: $color-gray-e0;
+        svg {
+            fill: $color-purple;
+        }
+    }
+}
+
+.mask-cmd-tools {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -183px;
+    overflow: hidden;
+}
+
+.cmd-tools {
+    height: 31px;
+    width: 225px;
+    position: relative;
+    right: -200px;
+    z-index: 0;
+    border-radius: 25px;
+    border: solid 1px $color-gray-e0;
+    overflow: hidden;
+    transition: all .2s;
+
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        top: -1px; // Hack for centering - need to fix ..
+        position: relative;
+        background: $color-gray-fa;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            height: 31px;
+            width: 31px;
+            color: $color-gray-9e;
+            svg {
+                height: 14px;
+                width: 14px;
+                fill: $color-gray-9e;
+            }
+            &:hover {
+                background-color: $color-gray-ee;
+            }
+            &:hover svg {
+                fill: $color-gray-42;
+            }
+        }
+        li:first-child {
+            margin-left: 8px;
+        }
+        .spacer {
+            width: 16px!important;
+        }
+    }
+}
+.cmd-tools--open {
+    right: -3px!important;
+    transition: all .2s;
+    background-color: red;
+}
+

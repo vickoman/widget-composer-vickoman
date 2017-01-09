@@ -1,0 +1,33 @@
+/* Panel */
+// .panel {
+//     position: absolute;
+//     top: 0;
+//     height: 100%;
+//     width: 0;
+//     z-index: 1;
+//     transition: all .2s ease-in-out;
+
+//     .panel__content {
+//         padding: 24px 0;
+//         height: 100vh;
+//         background-color: $color-gray-fa;
+//         overflow-x: hidden;
+//         overflow-y: auto;
+//         max-width: 280px;
+
+//         .panel__header {
+//             @include text-large-semibold;
+//             line-height: 1;
+//             padding-left: 16px;
+//             margin-bottom: 24px;
+//             height: 12px;
+//         }
+//         li {
+//             position: relative;
+//         }
+//     }
+//     // svg {
+//     //     width: 16px;
+//     //     height: 16px;
+//     // }
+// }

@@ -1,0 +1,68 @@
+.login-container {
+	.logo{
+		svg{
+			height: 75px;
+		}
+	}
+	width: 320px;
+	margin: 0 auto;
+	button{
+		width: 100%;
+		height: 40px;
+		margin: 25px 0px;
+	}
+	.input-text{
+		margin-top: 20px;
+		input{
+			@include text-large;
+			&::-webkit-input-placeholder{
+				@include text-large;
+				color: $color-gray-77;
+			}
+		}
+	}
+	.sign--in--options{
+		margin-top: 14px;
+		.sign--in--options--keep{
+			display: inline-block;
+			label{
+				color: $color-gray-77 !important;
+			}
+		}
+		.sign--in--options--forgot{
+			a{
+				color: $color-gray-77;
+			}
+			display: inline-block;
+			float: right;
+		}
+	}
+	.links{
+		width: 265px;
+    	margin: 0 auto;
+		div{
+			display: inline-block;
+		}
+		.links--button{
+			.links--button--icon{
+				margin-left: 13px;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+				flex: 0;
+				background-color: #fafafa;
+				border-radius: 20px;
+				font-size: 20px;
+				border: 1px solid #e0e0e0;
+				padding: 4px;
+				margin-bottom: 8px;
+				width: 32px;
+				height: 32px;
+				svg {
+					width: 16px;
+					height: 11px;
+				}
+			}
+		}
+	}
+}

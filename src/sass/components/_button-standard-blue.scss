@@ -1,0 +1,18 @@
+.button-standard-blue {
+    @include text-medium;
+    height: 31px;
+    padding: 0 16px;
+    line-height: 1;
+    background-color: $color-purple;
+    border: solid 1px $color-purple;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        background-color: $color-cobalt-dark;
+        border: solid 1px $color-cobalt;
+    }
+}

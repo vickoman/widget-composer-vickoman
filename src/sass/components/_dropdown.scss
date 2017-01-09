@@ -1,0 +1,14 @@
+.dropdown {
+    @include dropdown;
+    .dropdown__button {
+        // add overrides here
+        width: 100%;
+    }
+    .dropdown__title {
+        // add overrides here
+    }
+
+    ul.dropdown__content {
+        @include dropdown__content(24px, 100%)
+    }
+}

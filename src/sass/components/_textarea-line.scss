@@ -1,0 +1,32 @@
+.textarea-line-container {
+    @include text-area-line;
+    //height: 42px; // magic number
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .textarea-line {
+        width: 100%;
+    }
+    label {
+        transition: opacity .2s;
+        vertical-align: top;
+        padding-bottom: 11px;
+    }
+    textarea,
+    div[contenteditable="true"] {
+        outline: none;
+        border: none;
+        width: 100%;
+        resize: none;
+        padding: 0 0 4px 0;
+        border-bottom: solid 1px $color-gray-e0;
+        &:hover {
+            border-bottom: solid 1px $color-gray-71;
+        }
+    }
+
+    ::-webkit-input-placeholder {
+        // @include text-placeholder;
+        letter-spacing: 0;
+    }
+}

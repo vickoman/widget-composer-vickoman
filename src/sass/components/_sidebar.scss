@@ -1,0 +1,47 @@
+/* Sidebar */
+.sidebar {
+    background-color: $color-gray-fa;
+    width: 48px;
+    height: 100%;
+    position: relative;
+    z-index: 1500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px  8px 0px 8px;
+    border-left: solid 1px $color-gray-e0;
+    ul {
+        li {
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            flex: 0;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            margin-top: 4px;
+            margin-bottom: 8px;
+            svg {
+                height: 16px;
+                width: 16px;
+                fill: $color-gray-71;
+                top: 50%;
+                position: absolute;
+                margin-top: -8px;
+                left: 50%;
+                margin-left: -8px;
+                &:hover {
+                    fill: $color-gray-42;
+                }
+            }
+            &.u-selected {
+                background: $color-purple;
+                svg {
+                    fill:  $color-white;
+                }
+            }
+        }
+    }
+}
+
+

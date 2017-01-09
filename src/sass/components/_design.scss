@@ -1,0 +1,75 @@
+.knowbly-design{
+    
+    .typography{
+        table{
+            border-top: $color-gray-42 1px solid;
+            width: 98%;
+            padding-top: 2%;
+            margin: 1%;
+            td{
+                padding: 20px;
+            }
+            &.extra-large{
+                td{
+                    @include text-extra-large;
+                }
+            }
+            &.large{
+                td{
+                    @include text-large;
+                }
+            }
+            &.medium{
+                td{
+                    @include text-medium;
+                }
+            }
+            &.small{
+                td{
+                    @include text-small;
+                }
+            }
+            &.extra-small{
+                td{
+                    @include text-extra-small;
+                }
+            }
+        }
+    }
+    .typography.lighter{
+        table{
+            border-top: $color-gray-42 1px solid;
+            width: 98%;
+            padding-top: 2%;
+            margin: 1%;
+            td{
+                padding: 20px;
+            }
+            &.extra-large{
+                td{
+                    @include text-extra-large2;
+                }
+            }
+            &.large{
+                td{
+                    @include text-large2;
+                }
+            }
+            &.medium{
+                td{
+                    @include text-medium2;
+                }
+            }
+            &.small{
+                td{
+                    @include text-small2;
+                }
+            }
+            &.extra-small{
+                td{
+                    @include text-extra-small2;
+                }
+            }
+        }
+    }
+}
